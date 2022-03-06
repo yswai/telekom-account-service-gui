@@ -16,10 +16,11 @@
           <li v-if="items.filter(i => i.accountType === 'INVESTMENT').length === 0">
             <a href="#" class="block hover:bg-gray-50">
                 <div class="px-4 py-4 sm:px-6">
-                <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between">
                     <div class="text-sm font-medium text-indigo-600 truncate">
                         No Investment Accounts Yet
                     </div>
+                  </div>
                 </div>
               </a>
           </li>
@@ -27,7 +28,7 @@
             <div>
               <a href="#" class="block hover:bg-gray-50">
                 <div class="px-4 py-4 sm:px-6">
-                <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between">
                     <div class="text-sm font-medium text-indigo-600 truncate">
                         {{item.name}}
                     </div>
@@ -36,6 +37,7 @@
                         Account No: {{item.accountNumber}}
                     </span>
                     </div>
+                  </div>
                 </div>
                 <div class="mt-2 flex justify-between">
                     <div class="sm:flex">
